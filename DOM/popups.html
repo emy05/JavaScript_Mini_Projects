@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup Boxes</title>
+</head>
+<body>
+    <button onclick="openalert()">open alert popup</button>
+    <button onclick="openprompt()">open prompt popup</button>
+    <button onclick="openconfirm()">open confirm popup</button>
+</body>
+</html>
+
+<script>
+    function openalert()
+    {
+        alert('The alert popup is opened');
+    }
+
+    function openprompt(){
+        prompt('The prompt popup is opened');
+    }
+
+    function openconfirm(){
+        confirm('The confirm popup is opened');
+    }
+</script>

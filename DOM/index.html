@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML access in JS</title>
+</head>
+<body>
+    <h1 class="introtext">This is Javascrit Tutorial</h1>
+    <h1 class="introtext">This is second h1 tag</h1>
+    <h1 id="idtext">Hello All</h1>
+    <h1>Work Hard</h1>
+</body>
+</html>
+
+<script>
+    var x = document.getElementsByClassName('introtext')
+    x[1].style.color='red'
+    x[0].innerHTML='The h1 tag is accessed' 
+    x[1].innerHTML='Second is also accessed'
+    var x=document.getElementById('idtext')
+    x.innerHTML='Tag with Id is accessed'
+
+    var x=document.getElementsByTagName('h1')
+    x[3].innerHTML='The h1 tag is accessed using tag attribute'
+
+    
+
+</script>
